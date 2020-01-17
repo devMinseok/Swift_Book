@@ -6,7 +6,9 @@
 
 스위프트 문법을 정리한 저장소입니다.
 
-- [Apple Developer](https://developer.apple.com/kr/swift/)
+- [TISTORY: Axe's Life - SwiftBook](https://axe-num1.tistory.com/category/SwiftBook)
+
+- [Apple Developer](https://developer.apple.com/kr/swift)
 - [Swift.org](https://swift.org)
 
 ## 문법 리스트
