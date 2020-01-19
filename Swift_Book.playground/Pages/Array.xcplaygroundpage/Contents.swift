@@ -6,56 +6,35 @@ import UIKit
 // 배열은 제네릭 형식
 // 빈 배열
 
-// MARK: 배열의 생성과 타입 (Create Array & Array Type)
+// MARK: 배열 생성(Create Array)
 
 // -<정식 문법>-
-// 정식 문법보다는 단축 문법을 주로 사용.
+// Tip: 정식 문법보다는 단축 문법을 주로 사용.
 
-// 변경 가능한 배열 (변수형 배열)
-// var 배열 이름: Array<배열의 타입> = [배열의 타입과 일치하는 타입의 값]
-var arr1: Array<Int> = [1, 2, 3, 4, 5, 6]
-
-// 변경 불가능한 배열 (상수형 배열)
-// let 배열 이름: Array<배열의 타입> = [배열의 타입과 일치하는 타입의 값]
-let arr2: Array<Int> = [1, 2, 3, 4, 5, 6]
-
-// 문자열 배열 생성예시:
-let strArray1: Array<String>
+// (let 또는 var) 배열 이름: Array<배열의 타입>
+let arr1: Array<Int>
 
 
 // -<단축 문법>-
-// 'Array<배열의 타입>' >>> '[배열의 타입]'
+// Tip: 'Array<배열의 타입>' >>> '[배열의 타입]'
 
-// var 배열 이름: [배열의 타입] = [배열의 타입과 일치하는 타입의 값]
-var arr3: [Int] = [1, 2, 3, 4, 5, 6]
-
-// let 배열 이름: [배열의 타입] = [배열의 타입과 일치하는 타입의 값]
-let arr4: [Int] = [1, 2, 3, 4, 5, 6]
-
-// 문자열 배열 생성예시:
-let strArray2: [String]
+// (let 또는 var) 배열 이름: [배열의 타입]
+let arr2: [Int]
 
 
 // -<형식 추론>-
 // 배열의 타입을 명시하지 않아도 되지만, 빈 배열을 만들 경우에는 타입을 반드시 명시해야함.
 
-// var 배열 이름 = [배열의 타입과 일치하는 타입의 값]
-var arr5 = [1, 2, 3, 4, 5, 6]
-
-// let 배열 이름 = [배열의 타입과 일치하는 타입의 값]
-let arr6 = [1, 2, 3, 4, 5, 6]
-
-// 문자열 배열 생성예시:
-let strArray3 = ["이렇게 값이 있어야 배열의 타입을 생략할 수 있습니다."]
-//let strArray3 = [] // 값이 없으면 형식추론을 할 수 없기에 X
+// (let 또는 var) 배열 이름 = [배열의 타입과 일치하는 타입의 값]
+let arr5 = [1, 2, 3, 4, 5, 6]
 
 
-// MARK: 배열에 값 채우기 (빈 배열, 값 채우기)
-
-let nums = [1, 2, 3]
-print(nums)
+// MARK: 배열에 값 넣기 (Put Values In Array)
 
 // -<빈 배열 만들기>-
+// 반드시 배열의 타입을 명시해야함.
+//let emptyArray = [] // error: 타입 명시가 되있지 않음.
+
 let emptyArray: [Int] = []
 
 // 정식 문법 사용
@@ -64,35 +43,59 @@ let emptyArray2 = Array<Int>()
 // 단축 문법 사용
 let emptyArray3 = [Int]()
 
-// -<일정 값으로 채우기>-
 
-//
-let zeroArray = [Int](repeating: 0, count: 10) // 기본값 채우기
+// -<임의의 값 넣기>-
+// '='뒤에는 대괄호 사이에 배열의 타입과 일치하는 값을 넣어줘야 함.
+
+// 정식 문법
+let strArray1: Array<String> = ["정식", "문법"]
+
+// 단축 문법
+let strArray2: [String] = ["단축", "문법"]
+
+// 형식 추론
+let strArray3 = ["형식", "추론"]
+
+// 시퀀스
+let nums = Array(1...3) // == let nums = Array<Int>(1...3)
+
+// 여러 자료형
+let anyArr: [Any] = [1, 2, "three", "four"] // == let anyArr: Array<Any> = [1, 2, "three", "four"]
+
+// -<크기가 정해진 배열>-
+// Array(reapeating:count:)메소드 사용
+
+let zeroArray1 = [Int](repeating: 0, count: 10)
+
+let zeroArray2 = Array(repeating: 0, count: 10)
+
+let strArray = [String](repeating: "str", count: 5)
+let charArray = [Character](repeating: "c", count: 5)
 
 
+// MARK: 배열 검사 (inspecting an Array)
 
-
-
-
-
-// MARK: inspecting an Array
-
+// 배열에 들어있는 값의 개수 검사
 nums.count
-nums.count == 0 // isEmpty속성 사용 추천
+nums.count == 0
 
+// 배열에 값이 있는지, 없는지를 확인 할땐 isEmpty속성 사용 추천.
 nums.isEmpty
 emptyArray.isEmpty
 
 // MARK: 배열 요소 접근 (Accessing Elements)
+// 스위프트 배열의 인덱스는 0부터 시작 (0, 1, 2, ...)
 
-let fruits = ["Apple", "Banana", "Melon"]
+let fruits = ["Apple", "Banana", "Melon"] // "Apple"의 인덱스는 0
 
+// -<서브스크립트>-
 fruits[0]
+fruits[1]
 fruits[2]
-// fruits[3] 인덱스 벗어남
-fruits[0...1] // 특정 범위 추출
+//fruits[3] // error: 인덱스는 0부터 시작하기에 3은 없음 (인덱스를 벗어남)
 
-// 서브스크립트 사용
+// 범위 연산자를 사용하여 특정 범위를 추출
+fruits[0...1]
 
 // 첫 번째 요소 접근
 fruits[fruits.startIndex]
@@ -101,7 +104,8 @@ fruits[fruits.startIndex]
 //fruits[fruits.endIndex] : X
 fruits[fruits.index(before: fruits.endIndex)] // : O
 
-// 속성 사용
+// -<속성 사용>-
+// 처음과 마지막 접근
 fruits.first
 fruits.last
 
@@ -111,7 +115,9 @@ emptyArray.last
 
 //emptyArray[0] // index out of range
 
-// 인덱스를 통한 접근과 속성을 통한 접근의 장단점
+// 인덱스를 통한 접근과 속성을 통한 접근의 장단점:
+// 인덱스 번호를 사용하여 접근한다면 빠르고 보기 쉽지만, 에러가 날 확률이 많다.
+// 속성을 사용하여 요소에 접근한다면 안정적이다.
 
 
 
