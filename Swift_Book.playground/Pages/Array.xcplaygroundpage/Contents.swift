@@ -1,10 +1,10 @@
 
 import UIKit
-
-// 배열은 single type
-// 0 Based index
-// 배열은 제네릭 형식
-// 빈 배열
+/*
+ 배열은 single type
+ 0 Based index
+ 배열은 제네릭 형식
+ */
 
 // MARK: 배열 생성(Create Array)
 
@@ -28,12 +28,16 @@ let arr2: [Int]
 // (let 또는 var) 배열 이름 = [배열의 타입과 일치하는 타입의 값]
 let arr5 = [1, 2, 3, 4, 5, 6]
 
+let arr: [Int] = []
+
+let adf = [1, "2"] as [Any]
+
 
 // MARK: 배열에 값 넣기 (Put Values In Array)
 
 // -<빈 배열 만들기>-
 // 반드시 배열의 타입을 명시해야함.
-//let emptyArray = [] // error: 타입 명시가 되있지 않음.
+//let emptyArray = [] // error: 타입 명시가 돼 있지 않음.
 
 let emptyArray: [Int] = []
 
@@ -73,7 +77,18 @@ let strArray = [String](repeating: "str", count: 5)
 let charArray = [Character](repeating: "c", count: 5)
 
 
-// MARK: 배열 검사 (inspecting an Array)
+// MARK: 배열의 가변성 (Array Variability)
+
+// 변수형 배열 (배열 생성 후 배열요소 변경가능)
+var someArr1 = [1, 2, 3, 4, 5]
+someArr1[0] = 0
+
+// 상수형 배열 (배열 생성 후 배열요쇼 변경 불가능)
+let someArr2 = [1, 2, 3, 4, 5]
+//someArr2[0] = 0 // 상수형 배열로 생성했기에 변경 불가능
+
+
+// MARK: 배열 검사 (Inspecting an Array)
 
 // 배열에 들어있는 값의 개수 검사
 nums.count
@@ -89,6 +104,7 @@ emptyArray.isEmpty
 let fruits = ["Apple", "Banana", "Melon"] // "Apple"의 인덱스는 0
 
 // -<서브스크립트>-
+
 fruits[0]
 fruits[1]
 fruits[2]
@@ -101,39 +117,36 @@ fruits[0...1]
 fruits[fruits.startIndex]
 
 // 마지막 요소 접근
-//fruits[fruits.endIndex] : X
-fruits[fruits.index(before: fruits.endIndex)] // : O
+// endIndex는 배열의 마지막 인덱스가 아님 (마지막 인덱스 다음임)
+//fruits[fruits.endIndex] // error: 인덱스를 벗어남
+fruits[fruits.index(before: fruits.endIndex)]
 
 // -<속성 사용>-
-// 처음과 마지막 접근
-fruits.first
-fruits.last
+// 배열의 시작과 마지막 인덱스에 접근할 때는 속성을 사용할 수 있음.
+fruits.first // 시작 인덱스
+fruits.last // 마지막 인덱스
 
 // 배열이 비어있다면 nil을 반환
 emptyArray.first
 emptyArray.last
 
-//emptyArray[0] // index out of range
+//emptyArray[0] // error: 배열에 값이 없음
 
-// 인덱스를 통한 접근과 속성을 통한 접근의 장단점:
-// 인덱스 번호를 사용하여 접근한다면 빠르고 보기 쉽지만, 에러가 날 확률이 많다.
-// 속성을 사용하여 요소에 접근한다면 안정적이다.
-
+// 속성 사용의 장점: 서브스크립트 문법은 배열이 비어있을 때 접근하면 에러가 나기에 불안전하지만, 속성은 nil을 반환하기에 안전함.
 
 
 //--------------------------------------------------------------------<
 
 
-
 //MARK: 배열 편집
 
-// MARK: 배열 요소 추가 (Adding Elements)
+// MARK: 요소 추가 (Adding Elements)
 
 var alphabet = ["A", "B", "C"]
 
 // append() == 하나의 요소를 추가할 때 사용
 alphabet.append("E")
-//alphabet.append(1) : X 배열은 single type
+//alphabet.append(1) // error: 배열은 single type이기에 다른 값은 넣지못함
 
 // 두가지 이상의 요소를 추가하고 싶다면 append(contentsOf:)메소드 사용
 alphabet.append(contentsOf: ["F", "G"])
