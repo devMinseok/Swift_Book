@@ -211,7 +211,7 @@ print(alphabet)
 
 
 
-// MARK: Comparing Arrays
+// MARK: Comparing Arrays (배열 비교)
 
 let a = ["A", "B", "C"]
 let b = ["a", "b", "c"]
@@ -220,8 +220,86 @@ let b = ["a", "b", "c"]
 a == b
 a != b
 
+// equal to 연산자와 동일함 (비교 연산자 '==')
 a.elementsEqual(b)
 
+// 후행 클로저 사용하여 요소를 비교하는 코드를 직접 구현
 a.elementsEqual(b) { (lhs, rhs) -> Bool in
-    return lhs.
+    return lhs.caseInsensitiveCompare(rhs) == .orderedSame // 같다면 true를 반환
 }
+
+
+// MARK: Finding Elements (요소 검색)
+
+let number = [1, 2, 3, 1, 4, 5, 2, 6, 7, 5]
+
+// 배열에 특정 요소가 저장되어있는지 확인할 때 사용하는 메서드
+number.contains(1) // true
+number.contains(10) // false
+
+// 단순히 존재여부만 확인
+
+// 직접 코드를 구현하여 확인
+number.contains { (n) -> Bool in
+    print(n)
+    return n % 2 == 0
+}
+
+// 첫번째 요소값을 반환
+number.first
+
+// 가장 먼저 검색된 배열의 요소 값을 반환
+number.first { (n) -> Bool in
+    return n % 2 == 0
+}
+
+// 가장 먼저 검색된 배열의 인덱스를 반환 (직접 구현)
+number.firstIndex { (n) -> Bool in
+    return n % 2 == 0
+}
+
+// 가장 먼저 검색된 배열의 인덱스를 반환
+number.firstIndex(of: 1) // 요소 1의 인덱스는 0이기에 0이 반환
+
+// 마지막도 있으나 first와 동일
+number.last
+
+number.last { (n) -> Bool in
+    return n % 2 == 0
+}
+
+// 이건 뭐.... 쓸모없지않나?... 크흠
+number.lastIndex(of: 2)
+
+//
+number.lastIndex { (n) -> Bool in // 6의 인덱스는 7
+    return n % 2 == 0
+}
+
+
+// MARK: Sorting on Array
+
+
+//클로저때 사용했던 sorted메서드와 연관지으면 될 듯 ^^...
+// sort => 배열을 직접 정렬
+// sorted => 정렬된 새로운 배열을 반환
+
+number.sorted()
+number
+
+number.sorted { (a, b) -> Bool in
+    return a > b
+}
+
+number.sorted().reversed()
+[Int](number.sorted().reversed())
+
+var mutableNums = number
+
+mutableNums.sort()
+mutableNums.reverse()
+
+mutableNums
+mutableNums.swapAt(0, 1)
+
+mutableNums.shuffle()
