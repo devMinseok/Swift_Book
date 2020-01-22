@@ -12,5 +12,6 @@
 - [Swift.org](https://swift.org)
 
 ## 문법 리스트
-* [Closure](https://github.com/Axe-Num1/Swift_Book/blob/master/Swift_Book.playground/Pages/Closure.xcplaygroundpage/Contents.swift)
-* [Array](https://github.com/Axe-Num1/Swift_Book/blob/master/Swift_Book.playground/Pages/Array.xcplaygroundpage/Contents.swift)
+* [Closure](https://github.com/Axe-Num1/Swift_Book/blob/master/Swift_Book.playground/Pages/Closure.xcplaygroundpage/Contents.swift)  =>  [(Check on Blog)](https://axe-num1.tistory.com/18)
+
+* [Array](https://github.com/Axe-Num1/Swift_Book/blob/master/Swift_Book.playground/Pages/Array.xcplaygroundpage/Contents.swift)  =>  [(Check on Blog)](https://axe-num1.tistory.com/19)
