@@ -5,8 +5,8 @@ import UIKit
 var dict = ["A": "Apple", "B": "Banana"]
 
 // 빈 딕셔너리
-// dict = [] // 이건 빈 배열임
-dict = [:]
+// dict = [] // error: 빈 배열 선언 방식이기에 X
+dict = [:] // ':'가 포함되어야 빈 딕셔너리를 만들 수 있음
 
 // Dictionary[Key: Value]
 
@@ -20,6 +20,7 @@ let dict2: [String: Int]
 let words = ["A": "Apple", "B": "Banana", "C": "City"]
 
 //let emptyDict = [:] // error: 타입 명시가 안되어 있음
+
 let emptyDict1: [String: String] = [:]
 
 // 빈 배열: 단축 문법

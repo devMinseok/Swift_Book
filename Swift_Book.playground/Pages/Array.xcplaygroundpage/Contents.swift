@@ -37,6 +37,7 @@ let adf = [1, "2"] as [Any]
 
 // -<빈 배열 만들기>-
 // 반드시 배열의 타입을 명시해야함.
+
 //let emptyArray = [] // error: 타입 명시가 돼 있지 않음.
 
 let emptyArray: [Int] = []
