@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='rendered'>
+    <pages>
+        <page name='Array'/>
+        <page name='Dictionary1'/>
+        <page name='Dictionary2'/>
+        <page name='Set'/>
+        <page name='Closure'/>
+        <page name='Enumerations1'/>
+        <page name='Enumerations2'/>
+        <page name='Structure'/>
+        <page name='Class'/>
+    </pages>
+</playground>
