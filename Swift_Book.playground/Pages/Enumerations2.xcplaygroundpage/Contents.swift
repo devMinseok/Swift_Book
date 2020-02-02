@@ -7,10 +7,10 @@ import UIKit
 // 직접 만든 열거형에는 별로 사용하지 않지만, 프레임워크에는 많이 사용됨
 
 /*
-enum TypeName: RawValuesType {
-    case caseName = Values
-}
-*/
+ enum TypeName: RawValuesType {
+     case caseName = Values
+ }
+ */
 
 enum Alignment: Int {
     case left
@@ -56,10 +56,10 @@ enum ControlChar: Character {
 // MARK: Associated Values (연관값)
 
 /*
-enum TypeName {
-    case caseName(Type)
-    case caseName(Type, Type, ...)
-}
+ enum TypeName {
+     case caseName(Type)
+     case caseName(Type, Type, ...)
+ }
  */
 
 /*
