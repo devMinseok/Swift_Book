@@ -69,3 +69,4 @@ case .left:
     print("Left")
 //default: // 열거형에 선언된 모든 케이스는 매칭되어있기에 default코드는 필요없음.
 }
+
