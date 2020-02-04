@@ -10,5 +10,7 @@
         <page name='Enumerations2'/>
         <page name='Structure'/>
         <page name='Class'/>
+        <page name='Initializer'/>
+        <page name='Value Types, Reference Types'/>
     </pages>
 </playground>
