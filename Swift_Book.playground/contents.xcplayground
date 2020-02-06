@@ -17,5 +17,6 @@
         <page name='Computed Property'/>
         <page name='Instance Method'/>
         <page name='Type Method'/>
+        <page name='Subscript'/>
     </pages>
 </playground>
