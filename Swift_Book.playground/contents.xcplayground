@@ -12,8 +12,10 @@
         <page name='Class'/>
         <page name='Initializer'/>
         <page name='Value Types, Reference Types'/>
-        <page name='Computed Properties'/>
         <page name='Property Observer'/>
         <page name='Type Property'/>
+        <page name='Computed Property'/>
+        <page name='Instance Method'/>
+        <page name='Type Method'/>
     </pages>
 </playground>
