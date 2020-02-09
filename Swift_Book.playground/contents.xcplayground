@@ -24,5 +24,7 @@
         <page name='Type Casting'/>
         <page name='Any &amp; Any Object'/>
         <page name='Overloading'/>
+        <page name='Initializers'/>
+        <page name='Required Initializer'/>
     </pages>
 </playground>
