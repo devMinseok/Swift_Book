@@ -12,9 +12,9 @@ Xcode Playground에 스위프트 문법을 정리한 저장소입니다.
 - [Swift.org](https://swift.org)
 
 ## 문법 리스트
-* [Closure](https://github.com/Axe-Num1/Swift_Book/blob/master/Swift_Book.playground/Pages/Closure.xcplaygroundpage/Contents.swift)  =>  [(Check on Blog)](https://axe-num1.tistory.com/18)
+* [Closure](https://github.com/Axe-Num1/Swift_Book/blob/master/Swift_Book.playground/Pages/Closure.xcplaygroundpage/Contents.swift)  ==>  [(Check on Blog)](https://axe-num1.tistory.com/18)
 
-* [Array](https://github.com/Axe-Num1/Swift_Book/blob/master/Swift_Book.playground/Pages/Array.xcplaygroundpage/Contents.swift)  =>  [(Check on Blog)](https://axe-num1.tistory.com/19)
+* [Array](https://github.com/Axe-Num1/Swift_Book/blob/master/Swift_Book.playground/Pages/Array.xcplaygroundpage/Contents.swift)  ==>  [(Check on Blog)](https://axe-num1.tistory.com/19)
 
 * [Any & Any Object](https://github.com/Axe-Num1/Swift_Book/blob/master/Swift_Book.playground/Pages/Any%20%26%20Any%20Object.xcplaygroundpage/Contents.swift)
 
