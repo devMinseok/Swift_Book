@@ -26,5 +26,6 @@
         <page name='Overloading'/>
         <page name='Initializers'/>
         <page name='Required Initializer'/>
+        <page name='Failable initializer'/>
     </pages>
 </playground>
