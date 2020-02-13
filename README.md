@@ -22,6 +22,8 @@ Xcode Playground에 스위프트 문법을 정리한 저장소입니다.
 
 * [Computed Property](https://github.com/Axe-Num1/Swift_Book/blob/master/Swift_Book.playground/Pages/Computed%20Property.xcplaygroundpage/Contents.swift)
 
+* [Deinitializer](https://github.com/Axe-Num1/Swift_Book/blob/master/Swift_Book.playground/Pages/Deinitializer.xcplaygroundpage/Contents.swift)
+
 * [Dictionary1](https://github.com/Axe-Num1/Swift_Book/blob/master/Swift_Book.playground/Pages/Dictionary1.xcplaygroundpage/Contents.swift)
 
 * [Dictionary2](https://github.com/Axe-Num1/Swift_Book/blob/master/Swift_Book.playground/Pages/Dictionary2.xcplaygroundpage/Contents.swift)
@@ -29,6 +31,8 @@ Xcode Playground에 스위프트 문법을 정리한 저장소입니다.
 * [Enumeration1](https://github.com/Axe-Num1/Swift_Book/blob/master/Swift_Book.playground/Pages/Enumerations1.xcplaygroundpage/Contents.swift)
 
 * [Enumeration2](https://github.com/Axe-Num1/Swift_Book/blob/master/Swift_Book.playground/Pages/Enumerations2.xcplaygroundpage/Contents.swift)
+
+* [Extension](https://github.com/Axe-Num1/Swift_Book/blob/master/Swift_Book.playground/Pages/Extension.xcplaygroundpage/Contents.swift)
 
 * [Inheritance](https://github.com/Axe-Num1/Swift_Book/blob/master/Swift_Book.playground/Pages/Inheritance.xcplaygroundpage/Contents.swift)
 
