@@ -27,5 +27,7 @@
         <page name='Initializers'/>
         <page name='Required Initializer'/>
         <page name='Failable initializer'/>
+        <page name='Deinitializer'/>
+        <page name='Extension'/>
     </pages>
 </playground>
