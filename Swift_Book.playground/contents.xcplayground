@@ -29,5 +29,6 @@
         <page name='Failable initializer'/>
         <page name='Deinitializer'/>
         <page name='Extension'/>
+        <page name='Protocol'/>
     </pages>
 </playground>
