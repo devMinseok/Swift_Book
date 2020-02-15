@@ -30,5 +30,6 @@
         <page name='Deinitializer'/>
         <page name='Extension'/>
         <page name='Protocol'/>
+        <page name='Generic'/>
     </pages>
 </playground>
