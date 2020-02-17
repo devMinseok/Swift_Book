@@ -34,9 +34,15 @@ Xcode Playground에 스위프트 문법을 정리한 저장소입니다.
 
 * [Extension](https://github.com/Axe-Num1/Swift_Book/blob/master/Swift_Book.playground/Pages/Extension.xcplaygroundpage/Contents.swift)
 
+* [Failable initializer](https://github.com/Axe-Num1/Swift_Book/blob/master/Swift_Book.playground/Pages/Failable%20initializer.xcplaygroundpage/Contents.swift)
+
+* [Generic](https://github.com/Axe-Num1/Swift_Book/blob/master/Swift_Book.playground/Pages/Generic.xcplaygroundpage/Contents.swift)
+
 * [Inheritance](https://github.com/Axe-Num1/Swift_Book/blob/master/Swift_Book.playground/Pages/Inheritance.xcplaygroundpage/Contents.swift)
 
 * [Initializer](https://github.com/Axe-Num1/Swift_Book/blob/master/Swift_Book.playground/Pages/Initializer.xcplaygroundpage/Contents.swift)
+
+* [Initializers](https://github.com/Axe-Num1/Swift_Book/blob/master/Swift_Book.playground/Pages/Initializers.xcplaygroundpage/Contents.swift)
 
 * [Instance Method](https://github.com/Axe-Num1/Swift_Book/blob/master/Swift_Book.playground/Pages/Instance%20Method.xcplaygroundpage/Contents.swift)
 
