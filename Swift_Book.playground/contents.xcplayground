@@ -31,5 +31,6 @@
         <page name='Extension'/>
         <page name='Protocol'/>
         <page name='Generic'/>
+        <page name='Error Handling'/>
     </pages>
 </playground>
