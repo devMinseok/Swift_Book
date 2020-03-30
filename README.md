@@ -32,6 +32,8 @@ Xcode Playground에 스위프트 문법을 정리한 저장소입니다.
 
 * [Enumeration2](https://github.com/Axe-Num1/Swift_Book/blob/master/Swift_Book.playground/Pages/Enumerations2.xcplaygroundpage/Contents.swift)
 
+* [Error Handling](https://github.com/devMinseok/Swift_Book/blob/master/Swift_Book.playground/Pages/Error%20Handling.xcplaygroundpage/Contents.swift)
+
 * [Extension](https://github.com/Axe-Num1/Swift_Book/blob/master/Swift_Book.playground/Pages/Extension.xcplaygroundpage/Contents.swift)
 
 * [Failable initializer](https://github.com/Axe-Num1/Swift_Book/blob/master/Swift_Book.playground/Pages/Failable%20initializer.xcplaygroundpage/Contents.swift)
